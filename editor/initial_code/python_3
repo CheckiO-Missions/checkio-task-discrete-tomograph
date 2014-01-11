@@ -1,11 +1,23 @@
-def checkio(a, b):
-    """
-        sums two passed arguments
-    """
-    return None
+def checkio(levels, columns):
+    return ["---------",
+            "---------",
+            "---------",
+            "---------",
+            "----X----",
+            "---------",
+            "---------",
+            "---------",
+            "---------"]
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
-    assert checkio(3, 2) == 5
-    assert checkio(5, 7) == 12
-    print('Done')
+    assert checkio("003232300",
+                   "003232300") == ["---------",
+                                    "---------",
+                                    "---XXX---",
+                                    "--X---X--",
+                                    "--X-X-X--",
+                                    "--X---X--",
+                                    "---XXX---",
+                                    "---------",
+                                    "---------"]

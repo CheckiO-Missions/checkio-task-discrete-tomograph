@@ -1,39 +1,56 @@
 <p>
-    <i>( Describe task in general )</i>
+    Sophia found the old bunker. The bunker has the square form -- the 9 levels with 9 rooms in each.
+    But some rooms were mined and Sophie wants to explore the location of rooms with bombs.
+    Nicola has built the special scanner which allow to count bombs in each level and column of rooms.
 </p>
 
 <p>
-    Sum two passed ints
+    The robots had scanned all rows and columns and got two line of numbers --
+    the quantity of bombs in each level from up to down and in each column from left to right as strings.
+    You should help Sophie and make the map of the bunker.
 </p>
+
+
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <img class="for_info_only" title="bunker" src="{{MEDIA}}bunker.png" alt="bunker" width="600px"/>
+    <img class="for_editor_only" title="bunker" src="{{MEDIA}}bunker.png" alt="bunker" width="380px"/>
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    The map of the bunker should be represented as a list of strings,
+    where clear rooms are shown as "-" and danger rooms as "X".
+</p>
+
+<p>
+    <strong>Input: </strong> Two arguments. A quantity of bombs in each level from top to down and in each column from left to right, strings.
+</p>
+
+<p>
+    <strong>Output: </strong> The map of the bunker as a list of strings with "X" and "-".
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+checkio("003232300",
+        "003232300") == ["---------",
+                         "---------",
+                         "---XXX---",
+                         "--X---X--",
+                         "--X-X-X--",
+                         "--X---X--",
+                         "---XXX---",
+                         "---------",
+                         "---------"]
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+
 </p>
